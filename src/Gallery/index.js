@@ -10,10 +10,10 @@ export default function Gallery({ productInfo }) {
       />
 
       <div className="thumb-gallery">
-        {productInfo.images.map((image, index) => {
+        {productInfo.images.map((image) => {
           return (
-            <div className="pic" key={index}>
-              <img src={`./${image}`} alt="product thumb" />
+            <div className="pic" key={image.id}>
+              <img src={`./${image.path}`} alt="product thumb" />
             </div>
           );
         })}
