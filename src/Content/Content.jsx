@@ -1,6 +1,6 @@
 import React from "react";
-import Gallery from "./Gallery";
-import Info from "./Info";
+import Gallery from "../Gallery";
+import Info from "../Info";
 
 const Content = ({ productInfo }) => {
   return (

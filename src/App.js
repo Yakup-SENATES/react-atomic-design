@@ -1,8 +1,7 @@
-import Container from "./pages/Container";
 import React from "react";
 import "./styles/style.scss";
-import productInfo from "./data/productInfo";
-
+import productInfo from "./Data/productInfo";
+import Container from "./Containers";
 function App() {
   return (
     <div className="App">
