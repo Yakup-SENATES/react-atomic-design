@@ -2,11 +2,11 @@ import React from "react";
 import Gallery from "../Gallery";
 import Info from "../Info";
 
-const Content = ({ productInfo }) => {
+const Content = ({ data }) => {
   return (
     <div className="content">
-      <Gallery productInfo={productInfo} />
-      <Info productInfo={productInfo} />
+      <Gallery data={data} />
+      <Info data={data} />
     </div>
   );
 };

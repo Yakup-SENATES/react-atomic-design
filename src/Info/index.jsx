@@ -1,12 +1,12 @@
 import React from "react";
 
-const Info = ({ productInfo }) => {
+const Info = ({ data }) => {
   return (
     <section className="product">
-      <div className="title">{productInfo.title}</div>
+      <div className="title">{data.title}</div>
 
       <div className="description">
-        <span className="fiyat">{productInfo.price} TL</span>
+        <span className="fiyat">{data.price} TL</span>
         <br />
         <span className="taksit">3 Taksit X 1.112,00TL . </span>
         <span className="tümTaksitler"> Tüm Taksitler</span>
@@ -22,7 +22,7 @@ const Info = ({ productInfo }) => {
       </div>
 
       <div className="info">
-        <p>{productInfo.description}</p>
+        <p>{data.description}</p>
       </div>
     </section>
   );

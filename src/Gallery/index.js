@@ -1,19 +1,24 @@
 import React from "react";
-
-export default function Gallery({ productInfo }) {
+import { v4 as uuid } from "uuid";
+export default function Gallery({ data }) {
   return (
     <section className="gallery">
       <img
         className="product-hero"
-        src={productInfo.product_hero}
+        src={data.productHero}
         alt="image product 1"
       />
 
+      {console.log(data)}
+      {data.images.map((image) => {
+        console.log(JSON.stringify(image));
+      })}
+
       <div className="thumb-gallery">
-        {productInfo.images.map((image) => {
+        {data.images.map((image) => {
           return (
-            <div className="pic" key={image.id}>
-              <img src={`./${image.path}`} alt="product thumb" />
+            <div className="pic" key={uuid()}>
+              <img src={`./${image}`} alt="product thumb" />
             </div>
           );
         })}

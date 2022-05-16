@@ -1,10 +1,10 @@
 import React from "react";
 import Content from "../Content/index";
 
-const Container = ({ productInfo }) => {
+const Container = ({ data }) => {
   return (
     <div className="container">
-      <Content productInfo={productInfo} />
+      <Content data={data} />
     </div>
   );
 };
