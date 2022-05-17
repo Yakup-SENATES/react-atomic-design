@@ -7,6 +7,7 @@ ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />}></Route>
+      <Route path="products/:id" element={<App />}></Route>
     </Routes>
   </Router>,
 

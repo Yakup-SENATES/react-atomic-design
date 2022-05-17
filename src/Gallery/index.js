@@ -18,7 +18,7 @@ export default function Gallery({ data }) {
         {data.images.map((image) => {
           return (
             <div className="pic" key={uuid()}>
-              <img src={`./${image}`} alt="product thumb" />
+              <img src={`../${image}`} alt="product thumb" />
             </div>
           );
         })}

@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./styles/style.scss";
 import Container from "./Containers";
 import api from "./Data/products";
+import { useParams } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await api.get("/products/125");
+        const result = await api.get("/products/" + id);
         setData(result.data);
       } catch (error) {
         console.log(error);
